@@ -19,12 +19,21 @@
 }
 
 .logo-navbar {
-  height: 50px;
+  height: 100px;
 }
 
 .nav-links {
   display: flex;
   gap: 30px;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 25px 50px;
+  border-radius: 50px;
+  border: 1px solid #fff;
+  text-transform: uppercase;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  font-family: "Orbitron", sans-serif;
+  letter-spacing: 2px;
 }
 
 .nav-link {
@@ -34,10 +43,15 @@
 }
 
 .contact-btn {
-  padding: 8px 16px;
-  background-color: white;
-  color: black;
-  border: none;
-  border-radius: 5px;
   cursor: pointer;
+  background-color: rgba(224, 153, 0, 0.2);
+  padding: 25px 50px;
+  border-radius: 50px;
+  border: 1px solid #fff;
+  color: white;
+  text-transform: uppercase;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  font-family: "Orbitron", sans-serif;
+  letter-spacing: 2px;
 }

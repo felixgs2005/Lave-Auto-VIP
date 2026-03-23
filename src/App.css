@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: auto;
+  font-family: sans-serif;
+  background: #fff;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+  max-width: 100%;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
