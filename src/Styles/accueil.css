@@ -25,7 +25,7 @@
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.45);
+  background: rgba(0, 0, 0, 0.60);
   z-index: 1;
 }
 
@@ -40,14 +40,17 @@
   color: #fff;
   text-align: center;
   padding: 0 1rem;
+  font-family: 'Orbitron', sans-serif;
 }
 
 .hero-content h1 {
-  font-size: clamp(2rem, 6vw, 4.5rem);
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  margin: 0 0 1rem;
+  font-size: 50px;
+  letter-spacing: 2px;
   text-transform: uppercase;
+}
+
+.hero-content .color-change {
+  color: #E09900;
 }
 
 .hero-content p {

@@ -30,8 +30,8 @@
   border-radius: 50px;
   border: 1px solid #fff;
   text-transform: uppercase;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
   font-family: "Orbitron", sans-serif;
   letter-spacing: 2px;
 }
@@ -39,7 +39,6 @@
 .nav-link {
   color: white;
   text-decoration: none;
-  font-weight: 500;
 }
 
 .contact-btn {
@@ -50,8 +49,9 @@
   border: 1px solid #fff;
   color: white;
   text-transform: uppercase;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
   font-family: "Orbitron", sans-serif;
   letter-spacing: 2px;
 }
+

@@ -1,10 +1,8 @@
-import Header from "../components/Header";
 import "../Styles/accueil.css";
 
 const Accueil = () => {
   return (
     <div className="accueil">
-      <Header />
       <div className="hero">
         <video
           className="hero-video"
@@ -16,8 +14,7 @@ const Accueil = () => {
         />
         <div className="hero-overlay" />
         <div className="hero-content">
-          <h1>Lave Auto VIP Club</h1>
-          <p>Le soin que votre véhicule mérite</p>
+          <h1>Bienvenue dans l'expérience <span className="color-change">VIP</span></h1>
         </div>
       </div>
     </div>
