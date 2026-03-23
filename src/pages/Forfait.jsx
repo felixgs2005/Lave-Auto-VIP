@@ -119,6 +119,12 @@ const Forfait = () => {
       )
     : forfaitsData;
 
+  const truncateDescription = (text, maxLines = 4) => {
+    const lines = text.split("\n");
+    if (lines.length <= maxLines) return text;
+    return lines.slice(0, maxLines).join("\n") + "\nEt encore plus...";
+  };
+
   return (
     <div className="forfait-page">
       <div className="forfait-overlay" />
@@ -130,17 +136,17 @@ const Forfait = () => {
           </h1>
           <div className="dropdown-container">
             <button
-              className="contact-btn"
+              className="choix-auto-btn"
               onClick={() => setDropdownOpen(!dropdownOpen)}
             >
-              Choisis ton véhicule
+              Choisis ton véhicule {dropdownOpen ? "▲" : "▼"}
             </button>
             {dropdownOpen && (
               <div className="dropdown-content">
                 <div
                   className="dropdown-item"
                   onClick={() => {
-                    setSelectedCategory(""); // "Tout afficher"
+                    setSelectedCategory("");
                     setDropdownOpen(false);
                   }}
                 >
@@ -167,7 +173,7 @@ const Forfait = () => {
           {filteredForfaits.map((f) => (
             <div className="forfait-card">
               <h3>{f.title}</h3>
-              <p>{f.description}</p>
+              <p>{truncateDescription(f.description)}</p>
               <div className="forfait-info">
                 <span>{f.duration}</span>
                 <span>{f.price}</span>
