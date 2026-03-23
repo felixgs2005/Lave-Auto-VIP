@@ -2,26 +2,42 @@
   min-height: 100vh;
   background: url("./images/bg-image-forfait.png") center/cover no-repeat;
   color: #fff;
-  padding: 50px;
-  font-family: "Orbitron", sans-serif;
+  padding: 150px 50px 50px 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.text-index {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1800px;
 }
 
 .forfait-header {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
   margin-bottom: 40px;
 }
 
 .forfait-title {
-  font-size: 2.5rem;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-/* Dropdown bouton */
+.forfait-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
 .contact-btn {
   cursor: pointer;
   background-color: rgba(224, 153, 0, 0.2);
-  padding: 25px 50px;
+  padding: 20px 40px;
   border-radius: 50px;
   border: 1px solid #fff;
   color: white;
@@ -31,9 +47,9 @@
   font-family: "Orbitron", sans-serif;
   letter-spacing: 2px;
   position: relative;
+  margin-bottom: 20px;
 }
 
-/* Contenu dropdown */
 .dropdown-container {
   position: relative;
 }
@@ -42,7 +58,8 @@
   display: none;
   position: absolute;
   top: 100%;
-  right: 0;
+  left: 50%;
+  transform: translateX(-50%);
   background: rgba(0, 0, 0, 0.6);
   border-radius: 15px;
   overflow: hidden;
@@ -63,21 +80,26 @@
   background: rgba(224, 153, 0, 0.3);
 }
 
-/* Cards */
 .forfait-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+  gap: 40px;
+  justify-items: center;
 }
 
 .forfait-card {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   border-radius: 20px;
   padding: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(224, 153, 0, 0.3);
   transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  max-width: 300px;
 }
 
 .forfait-card:hover {
@@ -85,8 +107,9 @@
 }
 
 .forfait-card h3 {
-  margin-bottom: 10px;
-  font-size: 1.3rem;
+  margin-bottom: 15px;
+  font-size: 20px;
+  text-align: center;
 }
 
 .forfait-card p {
@@ -99,4 +122,8 @@
   justify-content: space-between;
   font-weight: bold;
   font-size: 1rem;
+}
+
+.forfait-info span:last-child {
+  color: #e09900;
 }
