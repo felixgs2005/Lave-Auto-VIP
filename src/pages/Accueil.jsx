@@ -4,9 +4,6 @@ import "../Styles/accueil.css";
 const Accueil = () => {
   return (
     <div className="accueil">
-<<<<<<< HEAD
-      <h1>Accueil OK</h1>
-=======
       <Header />
       <div className="hero">
         <video
@@ -23,7 +20,6 @@ const Accueil = () => {
           <p>Le soin que votre véhicule mérite</p>
         </div>
       </div>
->>>>>>> 48a19101a66683c98230263a713df6e0ab7dfd9c
     </div>
   );
 };
