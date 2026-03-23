@@ -1,6 +1,6 @@
 .forfait-page {
   min-height: 100vh;
-  background: url("./images/bg-image-forfait.png") center/cover no-repeat;
+  background: url("/images/bg-image-forfait.png") center/cover no-repeat;
   color: #fff;
   padding: 150px 50px 50px 50px;
   display: flex;
