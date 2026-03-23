@@ -1,4 +1,5 @@
 .forfait-page {
+  position: relative;
   min-height: 100vh;
   background: url("/images/bg-image-forfait.png") center/cover no-repeat;
   color: #fff;
@@ -42,10 +43,12 @@
 
 .forfait-overlay {
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background: rgba(0, 0, 0, 0.4);
   z-index: 1;
-  min-height: 100%;
 }
 
 .choix-auto-btn {
