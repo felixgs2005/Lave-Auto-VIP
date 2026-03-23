@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
+import "../Styles/header.css";
 
 function Header() {
   const [scrollDir, setScrollDir] = useState("up");

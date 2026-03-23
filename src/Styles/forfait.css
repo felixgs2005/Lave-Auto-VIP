@@ -1,0 +1,102 @@
+.forfait-page {
+  min-height: 100vh;
+  background: url("./images/bg-image-forfait.png") center/cover no-repeat;
+  color: #fff;
+  padding: 50px;
+  font-family: "Orbitron", sans-serif;
+}
+
+.forfait-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.forfait-title {
+  font-size: 2.5rem;
+}
+
+/* Dropdown bouton */
+.contact-btn {
+  cursor: pointer;
+  background-color: rgba(224, 153, 0, 0.2);
+  padding: 25px 50px;
+  border-radius: 50px;
+  border: 1px solid #fff;
+  color: white;
+  text-transform: uppercase;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  font-family: "Orbitron", sans-serif;
+  letter-spacing: 2px;
+  position: relative;
+}
+
+/* Contenu dropdown */
+.dropdown-container {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 15px;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+.dropdown-container:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-item {
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.dropdown-item:hover {
+  background: rgba(224, 153, 0, 0.3);
+}
+
+/* Cards */
+.forfait-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.forfait-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s;
+}
+
+.forfait-card:hover {
+  transform: translateY(-5px);
+}
+
+.forfait-card h3 {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.forfait-card p {
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+.forfait-info {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 1rem;
+}

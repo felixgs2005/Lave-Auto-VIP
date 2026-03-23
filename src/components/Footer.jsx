@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../Styles/footer.css";
 
 import { FaFacebookF, FaInstagram, FaTiktok } from "react-icons/fa";
 
