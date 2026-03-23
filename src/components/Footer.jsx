@@ -41,7 +41,8 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="footer-right"><Link to="/forfait">Forfait</Link>{" "}
+        <div className="footer-right">
+          <Link to="/forfait">Forfait</Link>{" "}
           <span className="gold-line">|</span>
           <Link to="/realisation">Réalisations</Link>{" "}
           <span className="gold-line">|</span>
