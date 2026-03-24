@@ -85,7 +85,6 @@
   border-radius: 2px;
 }
 
-/* ── RÉALISATIONS ── */
 .realisations {
   background: #0d0d0d;
 }
@@ -98,7 +97,7 @@
 }
 
 .carousel-track {
-  width: min(700px, 85vw);
+  width: min(1000px, 85vw);
   height: min(460px, 56vw);
   position: relative;
   border-radius: 12px;
