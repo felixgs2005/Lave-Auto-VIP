@@ -11,7 +11,8 @@
 }
 
 .navbar-bg {
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
 }
 
 .navbar-hide {
@@ -19,7 +20,7 @@
 }
 
 .logo-navbar {
-  height: 100px;
+  height: 80px;
 }
 
 .nav-links {
@@ -31,9 +32,9 @@
   border: 1px solid #fff;
   text-transform: uppercase;
   backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
   font-family: "Orbitron", sans-serif;
   letter-spacing: 2px;
+  transition: all 0.3s ease;
 }
 
 .nav-link {
@@ -55,7 +56,72 @@
   color: white;
   text-transform: uppercase;
   backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
   font-family: "Orbitron", sans-serif;
   letter-spacing: 2px;
+}
+
+/* Burger menu */
+.burger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.burger div {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+.burger.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.burger.toggle .line2 {
+  opacity: 0;
+}
+
+.burger.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Responsive */
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    background-color: rgba(21, 21, 21, 0.95);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 0;
+    width: 60%;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .nav-links.open {
+    transform: translateX(0);
+  }
+
+  .nav-contact {
+    display: none;
+  }
+
+  .burger {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    width: 80%;
+  }
 }

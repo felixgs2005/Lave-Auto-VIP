@@ -30,7 +30,9 @@
   color: #fff;
   text-decoration: none;
   font-weight: 500;
-  transition: transform 0.3s, color 0.3s;
+  transition:
+    transform 0.3s,
+    color 0.3s;
 }
 
 .footer-socials a:hover {
@@ -42,6 +44,7 @@
   flex: 1;
   min-width: 200px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   gap: 10px;
   text-align: center;
@@ -56,10 +59,11 @@
 .footer-right a {
   color: #fff;
   text-decoration: none;
-  transition: color 0.3s;
-  font-family: 'Orbitron', sans-serif;
+  font-family: "Orbitron", sans-serif;
   letter-spacing: 2px;
-  transition: transform 0.3s, color 0.3s;
+  transition:
+    transform 0.3s,
+    color 0.3s;
 }
 
 .footer-right a:hover {
@@ -72,4 +76,43 @@
   font-size: 14px;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   padding-top: 15px;
+}
+
+/* Responsive */
+@media screen and (max-width: 1024px) {
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .footer-right {
+    justify-content: center;
+    gap: 8px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer-logo {
+    height: 120px;
+  }
+
+  .footer-socials a {
+    margin-right: 10px;
+  }
+
+  .footer-right a {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer-logo {
+    height: 100px;
+  }
+
+  .footer-right {
+    flex-direction: column;
+    gap: 5px;
+  }
 }

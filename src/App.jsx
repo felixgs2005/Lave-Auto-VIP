@@ -6,12 +6,15 @@ import "./Styles/footer.css";
 import "./Styles/accueil.css";
 import "./Styles/realisation.css";
 import "./Styles/forfait.css";
+import "./Styles/carriere.css";
 import "./App.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Accueil from "./pages/Accueil";
 import Forfait from "./pages/Forfait";
 import Realisation from "./pages/Realisation";
+import Carriere from "./pages/Carriere";
+import ScrollToTop from "./components/ScrollToTop";
 
 function Intro({ onEnd }) {
   return (
@@ -36,11 +39,11 @@ function Intro({ onEnd }) {
       />
       <button
         onClick={onEnd}
-        onMouseEnter={e => {
+        onMouseEnter={(e) => {
           e.currentTarget.style.background = "rgba(255,255,255,0.25)";
           e.currentTarget.style.letterSpacing = "0.18em";
         }}
-        onMouseLeave={e => {
+        onMouseLeave={(e) => {
           e.currentTarget.style.background = "transparent";
           e.currentTarget.style.letterSpacing = "0.12em";
         }}
@@ -75,12 +78,14 @@ function App() {
     <>
       {showIntro && <Intro onEnd={() => setShowIntro(false)} />}
       <Router>
+        <ScrollToTop />
         <Header />
 
         <Routes>
           <Route path="/" element={<Accueil />} />
           <Route path="/forfait" element={<Forfait />} />
           <Route path="/realisation" element={<Realisation />} />
+          <Route path="/carriere" element={<Carriere />} />
         </Routes>
 
         <Footer />

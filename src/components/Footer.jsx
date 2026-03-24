@@ -47,9 +47,15 @@ const Footer = () => {
           <span className="gold-line">|</span>
           <Link to="/realisation">Réalisations</Link>{" "}
           <span className="gold-line">|</span>
-          <HashLink smooth to="/#temoignages">Témoignages</HashLink>{" "}
+          <Link to="/carriere">Carrières</Link>{" "}
           <span className="gold-line">|</span>
-          <HashLink smooth to="/#contact">Contact</HashLink>
+          <HashLink smooth to="/#temoignages">
+            Témoignages
+          </HashLink>{" "}
+          <span className="gold-line">|</span>
+          <HashLink smooth to="/#contact">
+            Contact
+          </HashLink>
         </div>
       </div>
 

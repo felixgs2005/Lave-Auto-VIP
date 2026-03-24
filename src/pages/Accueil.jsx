@@ -67,7 +67,7 @@ const Accueil = () => {
         />
         <div className="hero-overlay" />
         <div className="hero-content">
-          <h1>BIENVENUE DANS L'EXPÉRIENCE VIP</h1>
+          <h1>BIENVENUE DANS L'EXPÉRIENCE <span className="color-change">VIP</span></h1>
         </div>
       </div>
 
