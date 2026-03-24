@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import "../Styles/footer.css";
 
 import { FaFacebookF, FaInstagram, FaTiktok } from "react-icons/fa";
@@ -42,13 +43,13 @@ const Footer = () => {
         </div>
 
         <div className="footer-right">
-          <Link to="/forfait">Forfait</Link>{" "}
+          <Link to="/forfait">Forfaits</Link>{" "}
           <span className="gold-line">|</span>
           <Link to="/realisation">Réalisations</Link>{" "}
           <span className="gold-line">|</span>
-          <Link to="/#temoignage-section">Témoignages</Link>{" "}
+          <HashLink smooth to="/#temoignages">Témoignages</HashLink>{" "}
           <span className="gold-line">|</span>
-          <Link to="/contact">Contact</Link>
+          <HashLink smooth to="/#contact">Contact</HashLink>
         </div>
       </div>
 

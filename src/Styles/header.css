@@ -39,6 +39,11 @@
 .nav-link {
   color: white;
   text-decoration: none;
+  transition: transform 0.3s;
+}
+
+.nav-link:hover {
+  transform: scale(1.1);
 }
 
 .contact-btn {
@@ -54,4 +59,3 @@
   font-family: "Orbitron", sans-serif;
   letter-spacing: 2px;
 }
-

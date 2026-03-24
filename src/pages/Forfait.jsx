@@ -104,79 +104,390 @@ const forfaitsData = [
     duration: "1 h 15 min",
     price: "29,99 $CA",
   },
-  // ... tu peux continuer à ajouter toutes les autres prestations de la même manière
+  {
+    id: 13,
+    category: "auto",
+    title: "PNEU POSÉ + BALANCÉ (ALLIAGES 13 À 15 POUCES)",
+    description: "- Montage\n- Démontage\n- Balancement",
+    duration: "1 h",
+    price: "69,99 $CA",
+  },
+  {
+    id: 14,
+    category: "auto",
+    title: "PNEU POSÉ + BALANCÉ (ALLIAGES 16 POUCES)",
+    description: "- Montage\n- Démontage\n- Balancement",
+    duration: "1 h",
+    price: "74,99 $CA",
+  },
+  {
+    id: 15,
+    category: "auto",
+    title: "PNEU POSÉ + BALANCÉ (ALLIAGES 17 À 18 POUCES)",
+    description: "- Montage\n- Démontage\n- Balancement",
+    duration: "1 h",
+    price: "79,99 $CA",
+  },
+  {
+    id: 16,
+    category: "auto",
+    title: "PNEU POSÉ + BALANCÉ (ALLIAGES 19 À 21 POUCES)",
+    description: "- Montage\n- Démontage\n- Balancement",
+    duration: "1 h",
+    price: "89,99 $CA",
+  },
+  {
+    id: 17,
+    category: "all",
+    title: "LAVAGE SPÉCIALE ENTREPRISE GÉNIO",
+    description: "Lavage int./ext. de base\nOptions en sus",
+    duration: "2 h 30 min",
+    price: "69,99 $CA",
+  },
+  {
+    id: 18,
+    category: "all",
+    title: "POLISSAGE DES PHARES",
+    description: "Polissage des phares en 4 étapes et +",
+    duration: "2 h",
+    price: "45,00 $CA",
+  },
+  {
+    id: 19,
+    category: "all",
+    title: "POLISSAGE 3 ÉTAPE",
+    description: "Polissage de base 3 étapes",
+    duration: "3 h",
+    price: "Prix variable",
+  },
+  {
+    id: 20,
+    category: "all",
+    title: "RÉPARATION DE PNEU",
+    description: "Réparation du pneu défectueux",
+    duration: "30 min",
+    price: "Prix variable",
+  },
+  {
+    id: 21,
+    category: "auto",
+    title: "SHAMPOING TAPIS/TISSU (CONDUCTEUR)",
+    description: "Machine à tapis sur le tapis affecté",
+    duration: "45 min",
+    price: "19,99 $CA",
+  },
+  {
+    id: 22,
+    category: "vus",
+    title: "LAVAGE INTÉRIEUR VUS",
+    description: "- Dépoussiérage\n- Balayeuse\n- Vitres\n- Tornador trappe",
+    duration: "1 h 30 min",
+    price: "39,99 $CA",
+  },
+  {
+    id: 23,
+    category: "camion",
+    title: "SHAMPOING TAPIS/TISSU CAMION",
+    description: "Machine à tapis sur sièges et tapis",
+    duration: "3 h",
+    price: "79,99 $CA",
+  },
+  {
+    id: 24,
+    category: "vus",
+    title: "SHAMPOING TAPIS/TISSU VUS",
+    description: "Machine à tapis sur sièges et tapis",
+    duration: "2 h 30 min",
+    price: "59,99 $CA",
+  },
+  {
+    id: 25,
+    category: "auto",
+    title: "SHAMPOING MOTEUR AUTO",
+    description: "Dégraissage du compartiment moteur",
+    duration: "45 min",
+    price: "24,99 $CA",
+  },
+  {
+    id: 26,
+    category: "auto",
+    title: "LAVAGE INTÉRIEUR AUTO",
+    description: "- Dépoussiérage\n- Balayeuse\n- Vitres\n- Tornador trappe",
+    duration: "1 h 15 min",
+    price: "34,99 $CA",
+  },
+  {
+    id: 27,
+    category: "auto",
+    title: "DÉCONTAMINATION PEINTURE AUTO",
+    description: "Décontamination faite à la main",
+    duration: "1 h",
+    price: "39,99 $CA",
+  },
+  {
+    id: 28,
+    category: "vus",
+    title: "LAVAGE EXTÉRIEUR VUS",
+    description: "- Jantes\n- Carrosserie\n- Vitres ext.",
+    duration: "1 h",
+    price: "29,99 $CA",
+  },
+  {
+    id: 29,
+    category: "auto",
+    title: "LAVAGE INT./EXT. AUTO",
+    description:
+      "- Dépoussiérage\n- Balayeuse\n- Vitres int/ext\n- Jantes\n- Carrosserie",
+    duration: "1 h",
+    price: "59,99 $CA",
+  },
+  {
+    id: 30,
+    category: "camion",
+    title: "PROTECTEUR DE VINYLE CAMION",
+    description: "Application sur plastiques habitacle",
+    duration: "45 min",
+    price: "34,99 $CA",
+  },
+  {
+    id: 31,
+    category: "camion",
+    title: "SHAMPOING MOTEUR CAMION",
+    description: "Dégraissage du compartiment moteur",
+    duration: "45 min",
+    price: "34,99 $CA",
+  },
+  {
+    id: 32,
+    category: "auto",
+    title: "LAVAGE EXTÉRIEUR AUTO",
+    description: "- Jantes\n- Carrosserie\n- Vitres ext.",
+    duration: "45 min",
+    price: "24,99 $CA",
+  },
+  {
+    id: 33,
+    category: "vus",
+    title: "LUSTRE À PNEU VUS",
+    description: "Application sur les 4 pneus",
+    duration: "10 min",
+    price: "14,99 $CA",
+  },
+  {
+    id: 34,
+    category: "camion",
+    title: "LUSTRE À PNEU CAMION",
+    description: "Application sur les 4 pneus",
+    duration: "10 min",
+    price: "14,99 $CA",
+  },
+  {
+    id: 35,
+    category: "camion",
+    title: "LAVAGE EXTÉRIEUR CAMION",
+    description: "- Jantes\n- Carrosserie\n- Vitres ext.",
+    duration: "1 h 30 min",
+    price: "34,99 $CA",
+  },
+  {
+    id: 36,
+    category: "vus",
+    title: "REMISE À NEUF VUS",
+    description:
+      "- Lavage int/ext\n- Tornador\n- Balayeuse\n- Protecteur\n- Vitres\n- Shampoing\n- Cire\n- Décontamination\n- Lustre",
+    duration: "4 h",
+    price: "249,99 $CA",
+  },
+  {
+    id: 37,
+    category: "camion",
+    title: "LAVAGE INTÉRIEUR CAMION",
+    description: "- Dépoussiérage\n- Balayeuse\n- Vitres\n- Tornador",
+    duration: "2 h",
+    price: "44,99 $CA",
+  },
+  {
+    id: 38,
+    category: "camion",
+    title: "DÉCONTAMINATION PEINTURE CAMION",
+    description: "Décontamination à la main",
+    duration: "2 h",
+    price: "49,99 $CA",
+  },
+  {
+    id: 39,
+    category: "camion",
+    title: "LAVAGE INT./EXT. CAMION",
+    description:
+      "- Dépoussiérage\n- Balayeuse\n- Vitres\n- Jantes\n- Carrosserie",
+    duration: "2 h 15 min",
+    price: "79,99 $CA",
+  },
+  {
+    id: 40,
+    category: "auto",
+    title: "CIRE LIQUIDE AUTO",
+    description: "Application de cire liquide",
+    duration: "15 min",
+    price: "24,99 $CA",
+  },
+  {
+    id: 41,
+    category: "vus",
+    title: "CIRE LIQUIDE VUS",
+    description: "Application de cire liquide",
+    duration: "20 min",
+    price: "29,99 $CA",
+  },
+  {
+    id: 42,
+    category: "auto",
+    title: "LUSTRE À PNEU AUTO",
+    description: "Application sur les 4 pneus",
+    duration: "10 min",
+    price: "14,99 $CA",
+  },
+  {
+    id: 43,
+    category: "vus",
+    title: "PROTECTEUR DE VINYLE VUS",
+    description: "Application sur plastiques habitacle",
+    duration: "45 min",
+    price: "29,99 $CA",
+  },
+  {
+    id: 44,
+    category: "vus",
+    title: "SHAMPOING MOTEUR VUS",
+    description: "Dégraissage moteur",
+    duration: "45 min",
+    price: "29,99 $CA",
+  },
+  {
+    id: 45,
+    category: "vus",
+    title: "DÉCONTAMINATION PEINTURE VUS",
+    description: "Décontamination à la main",
+    duration: "1 h 30 min",
+    price: "44,99 $CA",
+  },
+  {
+    id: 46,
+    category: "vus",
+    title: "LAVAGE INT./EXT. VUS",
+    description:
+      "- Dépoussiérage\n- Balayeuse\n- Vitres\n- Jantes\n- Carrosserie",
+    duration: "1 h 30 min",
+    price: "69,99 $CA",
+  },
+  {
+    id: 47,
+    category: "vus",
+    title: "CIRE PERFECTION WAX 324 VUS",
+    description: "Application cire à la main (9-13 mois)",
+    duration: "2 h",
+    price: "99,99 $CA",
+  },
+  {
+    id: 48,
+    category: "camion",
+    title: "CIRE LIQUIDE CAMION",
+    description: "Application cire liquide",
+    duration: "30 min",
+    price: "34,99 $CA",
+  },
+  {
+    id: 49,
+    category: "auto",
+    title: "SHAMPOING TAPIS/TISSU AUTO",
+    description: "Machine à tapis sièges + tapis",
+    duration: "2 h",
+    price: "49,99 $CA",
+  },
+  {
+    id: 50,
+    category: "camion",
+    title: "CIRE PERFECTION WAX 324 CAMION",
+    description: "Application cire à la main (9-13 mois)",
+    duration: "2 h 30 min",
+    price: "119,99 $CA",
+  },
+  {
+    id: 51,
+    category: "auto",
+    title: "PROTECTEUR DE VINYLE AUTO",
+    description: "Application sur plastiques habitacle",
+    duration: "45 min",
+    price: "24,99 $CA",
+  },
 ];
 const categories = ["auto", "vus", "camion"];
 
+const getPriceNumber = (price) => {
+  if (price.includes("variable")) return 1;
+  return parseFloat(price.replace(",", "."));
+};
+
 const Forfait = () => {
   const [selectedCategory, setSelectedCategory] = useState("");
-  const [dropdownOpen, setDropdownOpen] = useState(false);
 
-  // Si aucune catégorie sélectionnée, on affiche toutes les cartes
-  const filteredForfaits = selectedCategory
-    ? forfaitsData.filter(
-        (f) => f.category === selectedCategory || f.category === "all",
-      )
-    : forfaitsData;
-
-  const truncateDescription = (text, maxLines = 4) => {
-    const lines = text.split("\n");
-    if (lines.length <= maxLines) return text;
-    return lines.slice(0, maxLines).join("\n") + "\nEt encore plus...";
-  };
+  const filteredForfaits = (
+    selectedCategory
+      ? forfaitsData.filter(
+          (f) => f.category === selectedCategory || f.category === "all",
+        )
+      : forfaitsData
+  ).sort((a, b) => getPriceNumber(a.price) - getPriceNumber(b.price));
 
   return (
     <div className="forfait-page">
       <div className="forfait-overlay" />
-      <div className="text-index">
-        <div className="forfait-header">
-          <h1 className="forfait-title">
-            Nos Forfaits{" "}
-            {selectedCategory ? selectedCategory.toUpperCase() : ""}
-          </h1>
-          <div className="dropdown-container">
-            <button
-              className="choix-auto-btn"
-              onClick={() => setDropdownOpen(!dropdownOpen)}
-            >
-              Choisis ton véhicule {dropdownOpen ? "▲" : "▼"}
+
+      <div className="forfait-container">
+        <h1 className="title">NOS FORFAITS</h1>
+
+        {/* FILTER */}
+        <div className="filters">
+          <button onClick={() => setSelectedCategory("")}>TOUS</button>
+          {categories.map((cat) => (
+            <button key={cat} onClick={() => setSelectedCategory(cat)}>
+              {cat.toUpperCase()}
             </button>
-            {dropdownOpen && (
-              <div className="dropdown-content">
-                <div
-                  className="dropdown-item"
-                  onClick={() => {
-                    setSelectedCategory("");
-                    setDropdownOpen(false);
-                  }}
-                >
-                  TOUT
-                </div>
-                {categories.map((cat) => (
-                  <div
-                    key={cat}
-                    className="dropdown-item"
-                    onClick={() => {
-                      setSelectedCategory(cat);
-                      setDropdownOpen(false);
-                    }}
-                  >
-                    {cat.toUpperCase()}
-                  </div>
-                ))}
-              </div>
-            )}
-          </div>
+          ))}
         </div>
 
-        <div className="forfait-cards">
+        {/* CARDS */}
+        <div className="cards">
           {filteredForfaits.map((f) => (
-            <div className="forfait-card">
+            <div className="card" key={f.id}>
               <h3>{f.title}</h3>
-              <p>{truncateDescription(f.description)}</p>
-              <div className="forfait-info">
-                <span>{f.duration}</span>
-                <span>{f.price}</span>
+
+              <div className="desc">
+                {(() => {
+                  const lines = f.description.replace(/^- /gm, "").split("\n");
+
+                  const displayed = lines.slice(0, 4);
+                  const hasMore = lines.length > 4;
+
+                  return (
+                    <>
+                      {displayed.map((line, i) => (
+                        <span key={i}>✔ {line}</span>
+                      ))}
+
+                      {hasMore && <span className="more">Encore plus...</span>}
+                    </>
+                  );
+                })()}
+              </div>
+
+              <div className="bottom">
+                <div className="infos">
+                  <span>{f.duration}</span>
+                  <span className="price">{f.price}</span>
+                </div>
+
+                <button className="btn">Réserver</button>
               </div>
             </div>
           ))}

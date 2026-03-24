@@ -1,150 +1,131 @@
 .forfait-page {
-  position: relative;
   min-height: 100vh;
   background: url("/images/bg-image-forfait.png") center/cover no-repeat;
-  color: #fff;
-  padding: 150px 50px 50px 50px;
-  display: flex;
-  justify-content: center;
-}
-
-.text-index {
   position: relative;
-  z-index: 2;
-  width: 100%;
-  max-width: 1800px;
-}
-
-.forfait-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin: 50px 0;
-}
-
-.forfait-title {
-  font-size: 40px;
-  text-align: center;
-  margin-bottom: 20px;
-  font-family: "Orbitron", sans-serif;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-
-.forfait-title::after {
-  content: "";
-  display: block;
-  width: 150px;
-  height: 4px;
-  background-color: #e09900;
-  margin-top: 5px;
-  border-radius: 2px;
+  color: white;
+  padding: 120px 40px;
 }
 
 .forfait-overlay {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.4);
-  z-index: 1;
-}
-
-.choix-auto-btn {
-  cursor: pointer;
-  background-color: rgba(224, 153, 0, 0.2);
-  padding: 20px 40px;
-  border-radius: 50px;
-  border: 1px solid #fff;
-  color: white;
-  text-transform: uppercase;
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
-  font-family: "Orbitron", sans-serif;
-  letter-spacing: 2px;
-  position: relative;
-  margin-bottom: 20px;
-}
-
-.dropdown-container {
-  position: relative;
-}
-
-.dropdown-content {
-  position: absolute;
-  top: 100%;
-  right: 0;
+  inset: 0;
   background: rgba(0, 0, 0, 0.6);
-  border-radius: 10px;
-  overflow: hidden;
-  display: none;
-  min-width: 150px;
-  z-index: 5;
 }
 
-.dropdown-container:hover .dropdown-content {
+.forfait-container {
+  position: relative;
+  z-index: 2;
+  max-width: 1800px;
+  margin: auto;
+}
+
+.title {
+  font-size: 42px;
+  margin-bottom: 40px;
+  font-family: "Orbitron", sans-serif;
+}
+
+.title::after {
+  content: "";
   display: block;
+  width: 150px;
+  height: 4px;
+  background: #e09900;
+  margin-top: 10px;
+  border-radius: 5px;
 }
 
-.dropdown-item {
-  padding: 10px 20px;
+.filters {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-bottom: 50px;
+}
+
+.filters button {
+  background: transparent;
+  border: 1px solid #e09900;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 30px;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: 0.3s;
 }
 
-.dropdown-item:hover {
-  background: rgba(224, 153, 0, 0.3);
+.filters button:hover {
+  background: #e09900;
+  color: black;
 }
 
-.forfait-cards {
+.cards {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  justify-items: center;
-  gap: 40px;
-  margin-top: 130px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  max-width: 1400px;
+  margin: auto;
 }
 
-.forfait-card {
-  background: rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(10px);
+.card {
+  background: rgba(0, 0, 0, 0.7);
   border-radius: 20px;
-  padding: 30px 25px;
+  padding: 25px;
+  backdrop-filter: blur(10px);
   border: 1px solid rgba(224, 153, 0, 0.3);
-  transition: transform 0.3s;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%;
-  width: 100%;
-  box-sizing: border-box;
-  min-width: 0;
+  transition: 0.3s;
 }
 
-.forfait-card:hover {
-  transform: translateY(-5px);
+.card:hover {
+  transform: translateY(-8px);
 }
 
-.forfait-card h3 {
-  margin: 5px 0 15px 0;
+.card h3 {
   font-size: 20px;
-  text-align: center;
-}
-
-.forfait-card p {
-  font-size: 18px;
   margin-bottom: 15px;
-  line-height: 1.5;
-  white-space: pre-line;
 }
 
-.forfait-info {
+.desc {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 15px;
+  opacity: 0.9;
+}
+
+.more {
+  opacity: 0.6;
+  font-style: italic;
+}
+
+.bottom {
+  margin-top: 20px;
+}
+
+.infos {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 15px;
   font-weight: bold;
-  font-size: 18px;
 }
 
-.forfait-info span:last-child {
+.price {
   color: #e09900;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #e09900, #ffb700);
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
 }
