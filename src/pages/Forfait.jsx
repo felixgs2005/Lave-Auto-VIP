@@ -88,7 +88,7 @@ const forfaitsData = [
   },
   {
     id: 9,
-    category: "all",
+    category: "auto",
     title: "SHAMPOING TAPIS/TISSU (AVANT) AUTO",
     description: "Shampoing tapis/tissu sur la partie avant du véhicule",
     duration: "1 h",
@@ -98,7 +98,7 @@ const forfaitsData = [
   },
   {
     id: 10,
-    category: "all",
+    category: "camion",
     title: "SHAMPOING TAPIS/TISSU (AVANT) CAMION",
     description:
       "Shampoing tapis/tissu sur la partie avant seulement du véhicule",
@@ -210,7 +210,7 @@ const forfaitsData = [
   },
   {
     id: 21,
-    category: "auto",
+    category: "all",
     title: "SHAMPOING TAPIS/TISSU (CONDUCTEUR)",
     description: "Machine à tapis sur le tapis affecté",
     duration: "45 min",
